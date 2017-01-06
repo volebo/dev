@@ -1,6 +1,6 @@
-# MUST READ
+# SHOULD READ
 
-Here is a list of **must read articles** about development process
+Here is a list of **should read articles** about coding and development process
 
 ## JavaScript
 
