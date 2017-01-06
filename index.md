@@ -1,5 +1,5 @@
 # dev.volebo.net
 
-Common rules related to the development process
+Guides and rules for developers of volebo.net
 
-Index..
+* [SHOULD read for developer](articles/dev-should-read)
