@@ -23,18 +23,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-slack_hook=""
+package_repo_slug=${TRAVIS_REPO_SLUG:-'UNKNOWN'}
+package_name=$package_repo_slug
+package_tag=${TRAVIS_TAG:-'x.x.x'}
+
 slack_icon_emoji=":package:"
-slack_username="travis-ci-autodeploy"
-slack_channel="#autonotification"
-
-if [ -n "${SLACK_USERNAME}" ]; then
-	slack_username="${SLACK_USERNAME}"
-fi
-
-if [ -n "${SLACK_CHANNEL}" ]; then
-	slack_channel="${SLACK_CHANNEL}"
-fi
+slack_username=${SLACK_USERNAME:-"travis-ci-autodeploy"}
+slack_channel=${SLACK_CHANNEL:-"#autonotification"}
+slack_hook=""
 
 if [ -n "${SLACK_HOOK}" ]; then
 	slack_hook="${SLACK_HOOK}"
@@ -49,7 +45,7 @@ pl="{
 	\"icon_emoji\": \"${slack_icon_emoji}\",
 	\"channel\": \"${slack_channel}\",
 	\"username\": \"${slack_username}\",
-	\"text\": \"Package *<https://github.com/$TRAVIS_REPO_SLUG|xxx>* was published, tag *$TRAVIS_TAG*\",
+	\"text\": \"*<https://github.com/${package_repo_slug}|Package ${package_name}>* was published, tag *${package_tag}*\",
 	\"attachments\": [
 		{
 			\"color\": \"#36a64f\",
@@ -62,6 +58,6 @@ pl="{
 
 echo 'Send Slack notification'
 res=$(curl -X POST --data-urlencode "payload=${pl}" "${slack_hook}")
-echo "Result: $res"
+echo "Result: ${res}"
 
 exit 0
