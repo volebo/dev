@@ -60,3 +60,9 @@ Remember - published NPM package is not for changing, it is just a dependency fo
 - deploy: https://docs.travis-ci.com/user/deployment/npm
 - travis conditional: https://docs.travis-ci.com/user/deployment#Conditional-Releases-with-on%3A
 - npm ignore: https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
+
+for `NPM > 5.5.1`
+
+- npm tokens: https://docs.npmjs.com/getting-started/working_with_tokens
+- 2fa: https://docs.npmjs.com/getting-started/using-two-factor-authentication
+- update profile from CLI: https://docs.npmjs.com/getting-started/modifying_your_profile_from_command_line
