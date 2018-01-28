@@ -7,6 +7,7 @@ Guides and rules for developers of volebo.net
 ### Learning
 
 * [SHOULD read for developer](articles/dev-should-read)
+* [Google Docs Tips](articles/google-docs-tips)
 
 ### Rules
 
