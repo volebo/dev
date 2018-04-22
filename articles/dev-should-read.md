@@ -2,7 +2,11 @@
 
 Here is a list of **should read articles** about coding and development process
 
-## JavaScript
+## Development process
+
+* [Git Flow](https://blog.axosoft.com/gitflow/) by Axosoft
+
+### JavaScript
 
 * [Optimization killers](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers) by Petka Antonov
 * [Error handling](https://www.joyent.com/node-js/production/design/errors) by contributors of Joyent
