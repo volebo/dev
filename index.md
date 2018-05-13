@@ -16,3 +16,7 @@ Guides and rules for developers of volebo.net
 ### Checklists
 
 * [Autopublish from Travis CI to NPM](articles/travis-to-npm-publish)
+
+### Other links
+
+* [LINKS](articles/links.md)
